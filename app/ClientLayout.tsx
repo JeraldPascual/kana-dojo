@@ -14,6 +14,7 @@ import MobileBottomBar from '@/shared/components/layout/BottomBar';
 import { useVisitTracker } from '@/features/Progress/hooks/useVisitTracker';
 import { getGlobalAdaptiveSelector } from '@/shared/lib/adaptiveSelection';
 import GlobalAudioController from '@/shared/components/layout/GlobalAudioController';
+import ServiceWorkerRegistration from '@/shared/components/ServiceWorkerRegistration';
 
 // Initialize adaptive selector early to load persisted weights from IndexedDB
 // This runs once at module load time, ensuring weights are ready before games start
@@ -119,25 +120,13 @@ export default function ClientLayout({
   // Track user visits for streak feature
   useVisitTracker();
 
-  useEffect(() => {
-    // Resume AudioContext on first user interaction
-    const handleClick = () => {
-      // @ts-expect-error (use-sound exposes Howler globally)
-      if (window.Howler?.ctx?.state === 'suspended') {
-        // @ts-expect-error (use-sound exposes Howler globally)
-        window.Howler.ctx.resume();
-      }
-    };
-
-    document.addEventListener('click', handleClick, { once: true });
-    return () => document.removeEventListener('click', handleClick);
-  }, []);
+  // Note: Web Audio API context resumption is handled in useAudio.ts
 
   return (
     <div
       data-scroll-restoration-id='container'
       className={clsx(
-        'bg-[var(--background-color)] text-[var(--main-color)] min-h-[100dvh] max-w-[100dvw]',
+        'min-h-[100dvh] max-w-[100dvw] bg-[var(--background-color)] text-[var(--main-color)]',
         fontClassName
       )}
       style={{
@@ -146,6 +135,7 @@ export default function ClientLayout({
       }}
     >
       <GlobalAudioController />
+      <ServiceWorkerRegistration />
       {children}
       <ScrollRestoration />
       <WelcomeModal />

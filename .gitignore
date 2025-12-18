@@ -43,3 +43,6 @@ dev-output.log
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Unused audio files (kept locally)
+/public/sounds/click/click9/
