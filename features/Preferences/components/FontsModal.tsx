@@ -31,18 +31,18 @@ const FontCard = memo(function FontCard({
   return (
     <label
       className={clsx(
-        'flex cursor-pointer items-center justify-center overflow-hidden rounded-xl border bg-(--card-color) px-4 py-4',
-        isSelected ? 'border-(--main-color)' : 'border-(--card-color)'
+        'flex cursor-pointer items-center justify-center overflow-hidden rounded-xl border-0 bg-[var(--card-color)] px-4 py-4',
+        isSelected ? 'border-[var(--main-color)]' : 'border-[var(--card-color)]'
       )}
       onClick={() => onClick(fontName)}
     >
       <p className={clsx('text-center text-xl', fontClassName)}>
-        <span className='text-(--secondary-color)'>
+        <span className='text-[var(--secondary-color)]'>
           {isSelected ? '\u2B24 ' : ''}
         </span>
-        <span>{fontName}</span>
+        <span className='text-[var(--secondary-color)]'>{fontName}</span>
         {isDefault && ' (default)'}
-        <span className='ml-2 text-(--secondary-color)'>かな道場</span>
+        <span className='ml-2 text-[var(--secondary-color)]'>かな道場</span>
       </p>
     </label>
   );
@@ -73,21 +73,21 @@ export default function FontsModal({ open, onOpenChange }: FontsModalProps) {
       <DialogPrimitive.Portal forceMount>
         <DialogPrimitive.Overlay className='fixed inset-0 z-50 bg-black/80' />
         <DialogPrimitive.Content
-          className='fixed top-1/2 left-1/2 z-50 flex max-h-[85vh] w-[95vw] max-w-4xl -translate-x-1/2 -translate-y-1/2 flex-col gap-0 rounded-2xl border-0 border-(--border-color) bg-(--background-color) p-0 sm:max-h-[80vh] sm:w-[90vw]'
+          className='fixed top-1/2 left-1/2 z-50 flex max-h-[85vh] w-[95vw] max-w-4xl -translate-x-1/2 -translate-y-1/2 flex-col gap-0 rounded-2xl border-0 border-[var(--border-color)] bg-[var(--background-color)] p-0 sm:max-h-[80vh] sm:w-[90vw]'
           onOpenAutoFocus={e => e.preventDefault()}
         >
-          <div className='sticky top-0 z-10 flex flex-row items-center justify-between rounded-t-2xl border-b border-(--border-color) bg-(--background-color) px-6 pt-6 pb-4'>
-            <DialogPrimitive.Title className='text-2xl font-semibold text-(--main-color)'>
+          <div className='sticky top-0 z-10 flex flex-row items-center justify-between rounded-t-2xl border-b border-[var(--border-color)] bg-[var(--background-color)] px-6 pt-6 pb-4'>
+            <DialogPrimitive.Title className='text-2xl font-semibold text-[var(--main-color)]'>
               Fonts
-              <span className='ml-2 text-sm font-normal text-(--secondary-color)'>
+              <span className='ml-2 text-sm font-normal text-[var(--secondary-color)]'>
                 ({fonts.length})
               </span>
             </DialogPrimitive.Title>
             <button
               onClick={handleClose}
-              className='shrink-0 rounded-xl p-2 hover:cursor-pointer hover:bg-(--card-color)'
+              className='shrink-0 rounded-xl p-2 hover:cursor-pointer hover:bg-[var(--card-color)]'
             >
-              <X size={24} className='text-(--secondary-color)' />
+              <X size={24} className='text-[var(--secondary-color)]' />
             </button>
           </div>
           <div id='modal-scroll' className='flex-1 overflow-y-auto px-6 py-6'>
