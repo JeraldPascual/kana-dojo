@@ -65,6 +65,18 @@ jobs:
               if (timeSinceActivity >= CLOSE_THRESHOLD_MS) {
                 console.log('Closing stale issue #' + issue.number + ': ' + issue.title);
                 
+                // Unassign the user before closing
+                const assignees = issue.assignees.map(function(a) { return a.login; });
+                if (assignees.length > 0) {
+                  await github.rest.issues.removeAssignees({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: issue.number,
+                    assignees: assignees
+                  });
+                  console.log('Unassigned ' + assignees.join(', ') + ' from issue #' + issue.number);
+                }
+                
                 const closedMsg = t.closed;
                 await github.rest.issues.createComment({
                   owner: context.repo.owner,

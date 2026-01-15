@@ -9,6 +9,11 @@ permissions:
   pull-requests: read
   contents: write
 
+# Prevent overlapping runs for the same PR
+concurrency:
+  group: pr-merge-close-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
 jobs:
   close-issue:
     runs-on: ubuntu-latest
@@ -86,7 +91,7 @@ jobs:
                 if (themeName) {
                   console.log('Looking for theme issue: ' + themeName);
                   for (const issue of issues) {
-                    if (issue.title.includes('Add Theme:') && 
+                    if (issue.title.includes('Add New Color Theme:') && 
                         issue.title.toLowerCase().includes(themeName.toLowerCase())) {
                       targetIssue = issue.number;
                       console.log('Found matching theme issue: #' + targetIssue);

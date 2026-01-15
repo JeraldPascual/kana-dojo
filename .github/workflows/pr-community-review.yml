@@ -101,7 +101,7 @@ jobs:
                 if (themeName) {
                   console.log('Looking for theme issue: ' + themeName);
                   for (const issue of issues) {
-                    if (issue.title.includes('Add Theme:') && 
+                    if (issue.title.includes('Add New Color Theme:') && 
                         issue.title.toLowerCase().includes(themeName.toLowerCase())) {
                       foundIssue = issue.number;
                       console.log('Found matching theme issue: #' + foundIssue);
