@@ -296,6 +296,12 @@ const baseThemeSets: BaseThemeGroup[] = [
         secondaryColor: 'oklch(70.0% 0.145 340.0 / 1)',
       },
       {
+        id: 'street-lantern',
+        backgroundColor: 'oklch(19.0% 0.038 40.0 / 1)',
+        mainColor: 'oklch(85.0% 0.135 55.0 / 1)',
+        secondaryColor: 'oklch(68.0% 0.165 30.0 / 1)'
+      },
+      {
         id: 'dragon-scale',
         backgroundColor: 'oklch(19.0% 0.055 165.0 / 1)',
         mainColor: 'oklch(68.0% 0.175 160.0 / 1)',
