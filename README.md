@@ -10,6 +10,7 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-kanadojo.com-blue?style=for-the-badge)](https://kanadojo.com)
 [![DeepWiki](https://img.shields.io/badge/docs-DeepWiki-purple?style=for-the-badge)](https://deepwiki.com/lingdojo/kana-dojo)
+[![Good First Issues](https://img.shields.io/github/issues-search/lingdojo/kana-dojo?query=is%3Aissue+is%3Aopen+label%3A%22good%20first%20issue%22&style=for-the-badge&label=good%20first%20issues&color=brightgreen)](https://github.com/lingdojo/kana-dojo/issues?q=is%3Aissue+is%3Aopen+label%3A%22good%20first%20issue%22)
 [![License](https://img.shields.io/badge/license-AGPL--v3-blue?style=for-the-badge)](LICENSE.md)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=for-the-badge&logo=typescript)](https://typescriptlang.org/)
@@ -37,6 +38,14 @@ If you fork this project, add these badges to your README:
 
 KanaDojo is an engaging web-based Japanese learning platform that makes mastering Hiragana, Katakana, Kanji, and Vocabulary fun and intuitive. Built with a focus on aesthetics, customization, and effective learning, it provides an immersive training environment for Japanese language learners at all levels.
 
+## Quick Links
+
+- **App**: https://kanadojo.com
+- **Practice**: https://kanadojo.com/en/hiragana-practice · https://kanadojo.com/en/katakana-practice · https://kanadojo.com/en/kanji-practice
+- **Docs**: https://deepwiki.com/lingdojo/kana-dojo · ./docs/
+- **Contributing**: ./CONTRIBUTING.md
+- **Good first issues**: https://github.com/lingdojo/kana-dojo/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
+
 ## Key Features
 
 - **Three Training Dojos** — Kana (Hiragana/Katakana), Kanji (JLPT N5-N1), and Vocabulary
@@ -55,6 +64,12 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to start learning.
+
+To validate changes before opening a PR:
+
+```bash
+npm run check
+```
 
 > **Having issues?** See the [Troubleshooting Guide](./docs/TROUBLESHOOTING.md)
 
