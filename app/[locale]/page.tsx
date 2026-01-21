@@ -1,3 +1,4 @@
+// Trigger Vercel redeployment - 2026-01-21
 import MainMenu from '@/features/MainMenu';
 import type { Metadata } from 'next';
 import { generatePageMetadata } from '@/core/i18n/metadata-helpers';
