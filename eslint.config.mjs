@@ -36,16 +36,8 @@ const eslintConfig = [
         },
       ],
       'no-console': ['warn', { allow: ['warn', 'error'] }],
-      'comma-dangle': [
-        'error',
-        {
-          arrays: 'always-multiline',
-          objects: 'always-multiline',
-          imports: 'always-multiline',
-          exports: 'always-multiline',
-          functions: 'always-multiline',
-        },
-      ],
+      // Trailing commas are handled by Prettier, not enforced by ESLint
+      'comma-dangle': 'off',
 
       // Layer Enforcement Rules - Hybrid Modular Architecture
       'import/no-restricted-paths': [
