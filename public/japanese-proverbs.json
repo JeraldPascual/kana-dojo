@@ -263,9 +263,22 @@
     "english": "Dumplings over flowers",
     "meaning": "Practical needs are more important than aesthetic pleasures"
   },
-  "japanese": "覆水盆に返らず",
-  "romaji": "Fukusui bon ni kaerazu",
-  "english": "Spilled water will not return to the tray",
-  "meaning": "What is done cannot be undone"
-},
+  {
+    "japanese": "転んでもただでは起きぬ",
+    "romaji": "Koronde mo tada de wa okinu",
+    "english": "Even if you fall, don't get up empty-handed",
+    "meaning": "Learn something from every setback"
+  },
+  {
+    "japanese": "覆水盆に返らず",
+    "romaji": "Fukusui bon ni kaerazu",
+    "english": "Spilled water will not return to the tray",
+    "meaning": "What is done cannot be undone"
+  },
+  {
+    "japanese": "雨垂れ石を穿つ",
+    "romaji": "Amadare ishi wo ugatsu",
+    "english": "Dripping water pierces stone",
+    "meaning": "Persistence can overcome great obstacles"
+  }
 ]
