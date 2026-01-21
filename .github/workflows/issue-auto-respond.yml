@@ -3,6 +3,8 @@ name: Auto-Reply to Issue Comments
 on:
   issue_comment:
     types: [created]
+  issues:
+    types: [assigned]
 
 permissions:
   issues: write
@@ -10,7 +12,7 @@ permissions:
 
 jobs:
   auto-respond:
-    if: ${{ !github.event.issue.pull_request && contains(github.event.issue.labels.*.name, 'community') && github.event.comment.user.login != 'github-actions[bot]' }}
+    if: ${{ !github.event.issue.pull_request && (contains(github.event.issue.labels.*.name, 'community') || contains(github.event.issue.labels.*.name, 'good first issue') || contains(github.event.issue.labels.*.name, 'beginner-friendly') || contains(github.event.issue.labels.*.name, 'first-timers-only') || contains(github.event.issue.labels.*.name, 'up-for-grabs') || contains(github.event.issue.labels.*.name, 'help wanted')) && (github.event_name != 'issue_comment' || github.event.comment.user.login != 'github-actions[bot]') }}
 
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -30,7 +32,50 @@ jobs:
             const t = templates.issueAutoRespond;
 
             const issue = context.payload.issue;
-            const commenter = context.payload.comment.user.login;
+            const commenter = context.payload.comment?.user?.login;
+            const repoUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}`;
+
+            function fillTemplate(str, vars) {
+              return Object.entries(vars).reduce((acc, [key, value]) => {
+                return acc
+                  .replaceAll(`{${key}}`, String(value))
+                  .replaceAll(`@{${key}}`, `@${value}`)
+                  .replaceAll(`#{${key}}`, `#${value}`);
+              }, str);
+            }
+
+            if (context.eventName === 'issues') {
+              const assignee = context.payload.assignee?.login;
+
+              if (!assignee) {
+                console.log('No assignee found in payload; skipping.');
+                return;
+              }
+
+              const msg = t.assigned;
+              const nextSteps = msg.nextSteps.items.map(function(item, i) {
+                return `${i + 1}. ${fillTemplate(item, { commenter: assignee, issueNumber: issue.number, repoUrl })}`;
+              }).join('\n');
+
+              const resources = msg.resources.items.map(function(item) {
+                return '- ' + fillTemplate(item, { commenter: assignee, issueNumber: issue.number, repoUrl });
+              }).join('\n');
+
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `${fillTemplate(msg.greeting, { commenter: assignee, issueNumber: issue.number, repoUrl })}\n\n${fillTemplate(msg.body, { commenter: assignee, issueNumber: issue.number, repoUrl })}\n\n${fillTemplate(msg.nextSteps.title, { commenter: assignee, issueNumber: issue.number, repoUrl })}\n${nextSteps}\n\n${fillTemplate(msg.resources.title, { commenter: assignee, issueNumber: issue.number, repoUrl })}\n${resources}\n\n${fillTemplate(msg.footer, { commenter: assignee, issueNumber: issue.number, repoUrl })}\n\n${fillTemplate(msg.encouragement, { commenter: assignee, issueNumber: issue.number, repoUrl })}`
+              });
+
+              console.log(`Posted assignment instructions for issue #${issue.number} to @${assignee}`);
+              return;
+            }
+
+            if (!commenter) {
+              console.log('No commenter found in payload; skipping.');
+              return;
+            }
 
             if (issue.assignees && issue.assignees.length > 0) {
               const assignee = issue.assignees[0].login;
@@ -41,7 +86,7 @@ jobs:
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issue.number,
-                  body: `${msg.greeting.replace('{commenter}', commenter)}\n\n${msg.body.replace('{assignee}', assignee)}\n\n${msg.suggestion}\n\n${msg.encouragement}`
+                  body: `${fillTemplate(msg.greeting, { commenter, assignee, issueNumber: issue.number, repoUrl })}\n\n${fillTemplate(msg.body, { commenter, assignee, issueNumber: issue.number, repoUrl })}\n\n${fillTemplate(msg.suggestion, { commenter, assignee, issueNumber: issue.number, repoUrl })}\n\n${fillTemplate(msg.encouragement, { commenter, assignee, issueNumber: issue.number, repoUrl })}`
                 });
               }
               return;
@@ -56,18 +101,18 @@ jobs:
 
             const msg = t.assigned;
             const nextSteps = msg.nextSteps.items.map(function(item, i) {
-              return `${i + 1}. ${item.replace('{issueNumber}', issue.number)}`;
+              return `${i + 1}. ${fillTemplate(item, { commenter, issueNumber: issue.number, repoUrl })}`;
             }).join('\n');
 
             const resources = msg.resources.items.map(function(item) {
-              return '- ' + item;
+              return '- ' + fillTemplate(item, { commenter, issueNumber: issue.number, repoUrl });
             }).join('\n');
 
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issue.number,
-              body: `${msg.greeting.replace('{commenter}', commenter)}\n\n${msg.body}\n\n${msg.nextSteps.title}\n${nextSteps}\n\n${msg.resources.title}\n${resources}\n\n${msg.footer}\n\n${msg.encouragement}`
+              body: `${fillTemplate(msg.greeting, { commenter, issueNumber: issue.number, repoUrl })}\n\n${fillTemplate(msg.body, { commenter, issueNumber: issue.number, repoUrl })}\n\n${fillTemplate(msg.nextSteps.title, { commenter, issueNumber: issue.number, repoUrl })}\n${nextSteps}\n\n${fillTemplate(msg.resources.title, { commenter, issueNumber: issue.number, repoUrl })}\n${resources}\n\n${fillTemplate(msg.footer, { commenter, issueNumber: issue.number, repoUrl })}\n\n${fillTemplate(msg.encouragement, { commenter, issueNumber: issue.number, repoUrl })}`
             });
 
             console.log(`Assigned issue #${issue.number} to @${commenter}`);

@@ -11,10 +11,10 @@ module.exports = {
     // Labels applied to newly created community issues
     newIssue: [
       'good first issue',
-      // 'community',
+      'community',
       'hacktoberfest',
       'help wanted',
-      // 'easy',
+      'easy',
       'up-for-grabs',
       'first-timers-only',
       'documentation',
@@ -49,7 +49,8 @@ module.exports = {
         'Fix any TypeScript, ESLint, or formatting errors',
         'Push your fixes to this PR',
       ],
-      footer: "Need help? Comment below and we'll assist! 🙌",
+      footer:
+        'Need help? Comment below. Helpful links: [Contributing]({repoUrl}/blob/main/CONTRIBUTING.md) · [Troubleshooting]({repoUrl}/blob/main/docs/TROUBLESHOOTING.md)',
     },
     success: {
       title: '## ✅ Quality Check Passed',
@@ -75,7 +76,7 @@ module.exports = {
       ],
     },
     footer:
-      'A maintainer will review your PR shortly. In the meantime, make sure all CI checks pass!',
+      'A maintainer will review your PR shortly. In the meantime, make sure all CI checks pass. You can run `npm run check` locally to match CI.',
     thanks: 'ありがとうございます! 🙏',
     firstTimeContributor: {
       separator: '---',
@@ -134,7 +135,7 @@ module.exports = {
       greeting: 'Hey @{commenter}! 👋',
       body: 'Thanks for your interest! Unfortunately, this issue is already assigned to @{assignee}.',
       suggestion:
-        "Don't worry—we have new contribution opportunities posted every 15 minutes! Keep an eye on our [issues list](../../issues?q=is%3Aopen+is%3Aissue+label%3Acommunity) for the next one.",
+        "Don't worry—we have new contribution opportunities posted every 15 minutes! Keep an eye on our [issues list]({repoUrl}/issues?q=is%3Aopen+is%3Aissue+label%3Acommunity) for the next one.",
       encouragement: 'がんばって! 💪',
     },
     assigned: {
@@ -153,8 +154,10 @@ module.exports = {
       resources: {
         title: '**Helpful resources:**',
         items: [
-          '[Contributing Guide](../../blob/main/CONTRIBUTING.md)',
-          '[Code of Conduct](../../blob/main/CODE_OF_CONDUCT.md)',
+          '[Contributing Guide]({repoUrl}/blob/main/CONTRIBUTING.md)',
+          '[Troubleshooting]({repoUrl}/blob/main/docs/TROUBLESHOOTING.md)',
+          '[Architecture]({repoUrl}/blob/main/docs/ARCHITECTURE.md)',
+          '[Code of Conduct]({repoUrl}/blob/main/CODE_OF_CONDUCT.md)',
         ],
       },
       footer: "Need help? Just comment here and we'll assist you!",
@@ -210,7 +213,7 @@ module.exports = {
       footer: "**Questions?** Comment below and we'll help! 🙌",
     },
     fact: {
-      title: '[Good First Issue] 🎋 Add Japan Fact #{id} (good-first-issue)',
+      title: '[Good First Issue] 🎋 Add Interesting, Cultural Fact about Japan {id} (good-first-issue)',
       header: '## 🎋 Add New Japan Fact',
       category: 'Community Contribution - Fun Fact',
       difficulty: 'Easy (good first issue!)',
@@ -224,7 +227,7 @@ module.exports = {
         'Add this fact to the end of the array (before the closing `]`)',
         'Make sure to add a comma after the previous last item',
         'Save the file and commit the changes',
-        'Submit a Pull Request with title: `content: add japan fact #{id}`',
+        'Submit a Pull Request with title: `content: add new japan fact`',
         'Link this issue using `Closes #<issue_number>`',
         'Star our repo ⭐, drink some delicious bubble tea 🍹 and wait for review!',
       ],
@@ -232,7 +235,7 @@ module.exports = {
     },
     proverb: {
       title:
-        '[Good First Issue] 🎌 Add Japanese Proverb #{id} (good-first-issue)',
+        '[Good First Issue] 🎌 Add New Japanese Proverb {id} (good-first-issue)',
       header: '## 🎌 Add Japanese Proverb (ことわざ)',
       category: 'Community Contribution - Proverb',
       difficulty: 'Easy (good first issue!)',
@@ -246,7 +249,7 @@ module.exports = {
         'Add this proverb object to the end of the array (before the closing `]`)',
         'Make sure to add a comma after the previous last item',
         'Save the file and commit the changes',
-        'Submit a Pull Request with title: `content: add japanese proverb #{id}`',
+        'Submit a Pull Request with title: `content: add new japanese proverb`',
         'Link this issue using `Closes #<issue_number>`',
         'Star our repo ⭐, drink some delicious bubble tea 🍹 and wait for review!',
       ],

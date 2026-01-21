@@ -335,7 +335,10 @@
     "romaji": "Fukusui bon ni kaerazu",
     "english": "Spilled water will not return to the tray",
     "meaning": "What is done cannot be undone",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "anushac13",
+    "completedPR": 1347
   },
   {
     "id": 33,
@@ -362,7 +365,7 @@
     "romaji": "Nakittsura ni hachi",
     "english": "A bee on a crying face",
     "meaning": "Misfortune never comes alone",
-    "issued": false
+    "issued": true
   },
   {
     "id": 36,
@@ -370,7 +373,8 @@
     "romaji": "Kuchi wa wazawai no moto",
     "english": "The mouth is the source of disaster",
     "meaning": "Careless speech can cause trouble",
-    "issued": false
+    "issued": false,
+    "completed": true
   },
   {
     "id": 37,
@@ -378,7 +382,7 @@
     "romaji": "Deru kugi wa utareru",
     "english": "The nail that sticks out gets hammered down",
     "meaning": "Those who stand out may be criticized",
-    "issued": false
+    "issued": true
   },
   {
     "id": 38,
@@ -386,7 +390,8 @@
     "romaji": "Shiranu ga hotoke",
     "english": "Not knowing is Buddha",
     "meaning": "Ignorance is bliss",
-    "issued": false
+    "issued": false,
+    "completed": true
   },
   {
     "id": 39,
@@ -394,7 +399,10 @@
     "romaji": "Ashita wa ashita no kaze ga fuku",
     "english": "Tomorrow's wind will blow tomorrow",
     "meaning": "Don't worry too much about the future",
-    "issued": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "youneedgreg",
+    "completedPR": 1274
   },
   {
     "id": 40,
@@ -402,7 +410,7 @@
     "romaji": "En no shita no chikaramochi",
     "english": "A strong person under the veranda",
     "meaning": "An unsung hero who supports behind the scenes",
-    "issued": false
+    "issued": true
   },
   {
     "id": 41,
@@ -410,7 +418,10 @@
     "romaji": "Yudan taiteki",
     "english": "Carelessness is the greatest enemy",
     "meaning": "Don't let your guard down",
-    "issued": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "youneedgreg",
+    "completedPR": 1282
   },
   {
     "id": 42,
@@ -418,7 +429,7 @@
     "romaji": "Kega no koumyou",
     "english": "Fame from a mistake",
     "meaning": "A lucky break that comes from an error",
-    "issued": false
+    "issued": true
   },
   {
     "id": 43,
@@ -426,7 +437,7 @@
     "romaji": "Nanakorobi yaoki",
     "english": "Fall seven times, get up eight",
     "meaning": "Never give up",
-    "issued": false
+    "issued": true
   },
   {
     "id": 44,
@@ -434,7 +445,7 @@
     "romaji": "Amadare ishi wo ugatsu",
     "english": "Dripping water pierces stone",
     "meaning": "Persistence can overcome great obstacles",
-    "issued": false
+    "issued": true
   },
   {
     "id": 45,
@@ -442,7 +453,10 @@
     "romaji": "Ishibashi wo tataite wataru",
     "english": "Tap a stone bridge before crossing",
     "meaning": "Be very cautious",
-    "issued": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "mahatolalit",
+    "completedPR": 1324
   },
   {
     "id": 46,
@@ -450,7 +464,7 @@
     "romaji": "Koronde mo tada de wa okinu",
     "english": "Even if you fall, don't get up empty-handed",
     "meaning": "Learn something from every setback",
-    "issued": false
+    "issued": true
   },
   {
     "id": 47,
@@ -458,7 +472,10 @@
     "romaji": "Mago ni mo ishou",
     "english": "Even a packhorse driver looks good in fine clothes",
     "meaning": "Clothes make the person",
-    "issued": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "Derek-94",
+    "completedPR": 1358
   },
   {
     "id": 48,
