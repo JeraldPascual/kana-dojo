@@ -340,7 +340,10 @@
   {
     "id": 47,
     "fact": "There's a Japanese concept called 'ikigai' (生き甲斐) - your reason for being - found at the intersection of what you love, need, and can be paid for.",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "Solscriptor",
+    "completedPR": 1292
   },
   {
     "id": 48,
@@ -350,7 +353,10 @@
   {
     "id": 49,
     "fact": "The word 'amae' (甘え) describes depending on another's goodwill - a uniquely Japanese concept of presuming on someone's affection.",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "sheryyll",
+    "completedPR": 1425
   },
   {
     "id": 50,
@@ -537,12 +543,18 @@
   {
     "id": 75,
     "fact": "The word 'enryo' (遠慮) describes polite restraint - like declining seconds even when hungry, to not be a burden.",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "kaedeek",
+    "completedPR": 1371
   },
   {
     "id": 76,
     "fact": "Japan has a zero-tolerance policy for drunk driving - any detectable alcohol means immediate arrest and potential prison time.",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "Derek-94",
+    "completedPR": 1346
   },
   {
     "id": 77,
@@ -552,7 +564,10 @@
   {
     "id": 78,
     "fact": "Japan has the world's shortest escalator - only 5 steps tall (83.4 cm) at More's Department Store in Kawasaki.",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "JeraldPascual",
+    "completedPR": 1370
   },
   {
     "id": 79,
@@ -567,13 +582,16 @@
     "fact": "Japan has 'midnight service' buses for people who miss the last train, charging premium prices to get workers home.",
     "issued": true,
     "completed": true,
-    "completedBy": "Doc-Entity",
-    "completedPR": 1165
+    "completedBy": "awosky",
+    "completedPR": 1348
   },
   {
     "id": 81,
     "fact": "The concept of 'wa' (和) in Japanese represents harmony - so important that the official name for Japan is 'Wa' (the country of harmony).",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "anushac13",
+    "completedPR": 1340
   },
   {
     "id": 82,
@@ -594,7 +612,8 @@
   {
     "id": 84,
     "fact": "Japan has 'crying rooms' in some theaters where parents can watch movies with babies without disturbing other viewers.",
-    "issued": true
+    "issued": false,
+    "completed": true
   },
   {
     "id": 85,
@@ -631,12 +650,18 @@
   {
     "id": 89,
     "fact": "The concept of 'kawaisa' (可愛さ) or cuteness is so culturally important that it influences everything from government mascots to warning signs.",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "youneedgreg",
+    "completedPR": 1270
   },
   {
     "id": 90,
     "fact": "Japan has vending machines that sell used schoolgirl uniforms - though this practice is now heavily regulated in most areas.",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "youneedgreg",
+    "completedPR": 1279
   },
   {
     "id": 91,
@@ -646,67 +671,73 @@
   {
     "id": 92,
     "fact": "Japan's National Apology Day falls on August 15th, when the nation reflects on World War II and its aftermath.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 93,
     "fact": "The Japanese word 'tekito' (適当) means both 'appropriate' and 'whatever/random' depending on context and tone.",
-    "issued": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "kaedeek",
+    "completedPR": 1368
   },
   {
     "id": 94,
     "fact": "Japan has 'salary men insurance' that pays out if you're transferred to a remote location away from your family.",
-    "issued": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "yashasvisharma-iet",
+    "completedPR": 1333
   },
   {
     "id": 95,
     "fact": "There's a Japanese practice called 'goraiko' (御来光) - watching the sunrise from a mountain peak, especially on New Year's Day.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 96,
     "fact": "Japan has some of the world's oldest trees - a Japanese cedar called Jōmon Sugi on Yakushima is estimated to be 2,000-7,000 years old.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 97,
     "fact": "The word 'majime' (真面目) describes someone earnest and sincere - a highly valued personality trait in Japanese culture.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 98,
     "fact": "Japan has a festival where parents throw their babies to sumo wrestlers, who bounce them for good luck and health.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 99,
     "fact": "There's a Japanese word 'takumi' (匠) for master craftsmen who dedicate their lives to perfecting a single skill.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 100,
     "fact": "Japan's Shinkansen (bullet train) has a cleaning crew that fully cleans each car in exactly 7 minutes between arrivals and departures.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 101,
     "fact": "The Japanese concept 'meibutsu' (名物) refers to famous local products - every region has foods and crafts found nowhere else.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 102,
     "fact": "Japan has professional apology agencies where you can hire someone to apologize on your behalf for serious personal matters.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 103,
     "fact": "There's a Japanese word 'kenkyo' (謙虚) for humility so deep it rejects praise - considered one of the highest virtues.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 104,
     "fact": "Japan has train 'pushers' (oshiya) whose job is to physically push passengers into overcrowded trains during rush hour.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 105,

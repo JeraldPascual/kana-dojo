@@ -335,7 +335,10 @@
     "romaji": "Fukusui bon ni kaerazu",
     "english": "Spilled water will not return to the tray",
     "meaning": "What is done cannot be undone",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "anushac13",
+    "completedPR": 1347
   },
   {
     "id": 33,
@@ -396,7 +399,10 @@
     "romaji": "Ashita wa ashita no kaze ga fuku",
     "english": "Tomorrow's wind will blow tomorrow",
     "meaning": "Don't worry too much about the future",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "youneedgreg",
+    "completedPR": 1274
   },
   {
     "id": 40,
@@ -404,7 +410,8 @@
     "romaji": "En no shita no chikaramochi",
     "english": "A strong person under the veranda",
     "meaning": "An unsung hero who supports behind the scenes",
-    "issued": true
+    "issued": false,
+    "completed": true
   },
   {
     "id": 41,
@@ -412,7 +419,10 @@
     "romaji": "Yudan taiteki",
     "english": "Carelessness is the greatest enemy",
     "meaning": "Don't let your guard down",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "youneedgreg",
+    "completedPR": 1282
   },
   {
     "id": 42,
@@ -420,7 +430,7 @@
     "romaji": "Kega no koumyou",
     "english": "Fame from a mistake",
     "meaning": "A lucky break that comes from an error",
-    "issued": false
+    "issued": true
   },
   {
     "id": 43,
@@ -428,7 +438,10 @@
     "romaji": "Nanakorobi yaoki",
     "english": "Fall seven times, get up eight",
     "meaning": "Never give up",
-    "issued": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "iamnikhilranjan",
+    "completedPR": 1462
   },
   {
     "id": 44,
@@ -436,7 +449,10 @@
     "romaji": "Amadare ishi wo ugatsu",
     "english": "Dripping water pierces stone",
     "meaning": "Persistence can overcome great obstacles",
-    "issued": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "kaedeek",
+    "completedPR": 1369
   },
   {
     "id": 45,
@@ -444,7 +460,10 @@
     "romaji": "Ishibashi wo tataite wataru",
     "english": "Tap a stone bridge before crossing",
     "meaning": "Be very cautious",
-    "issued": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "mahatolalit",
+    "completedPR": 1324
   },
   {
     "id": 46,
@@ -452,7 +471,10 @@
     "romaji": "Koronde mo tada de wa okinu",
     "english": "Even if you fall, don't get up empty-handed",
     "meaning": "Learn something from every setback",
-    "issued": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "kaedeek",
+    "completedPR": 1364
   },
   {
     "id": 47,
@@ -460,7 +482,10 @@
     "romaji": "Mago ni mo ishou",
     "english": "Even a packhorse driver looks good in fine clothes",
     "meaning": "Clothes make the person",
-    "issued": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "Derek-94",
+    "completedPR": 1358
   },
   {
     "id": 48,
@@ -468,7 +493,7 @@
     "romaji": "Mikka bouzu",
     "english": "A three-day monk",
     "meaning": "Someone who quits quickly",
-    "issued": false
+    "issued": true
   },
   {
     "id": 49,
@@ -476,7 +501,7 @@
     "romaji": "Hayaoki wa sanmon no toku",
     "english": "Early rising is worth three coins",
     "meaning": "Good things come from getting up early",
-    "issued": false
+    "issued": true
   },
   {
     "id": 50,
@@ -484,7 +509,8 @@
     "romaji": "Anzuru yori umu ga yasushi",
     "english": "Giving birth is easier than worrying",
     "meaning": "Doing is often easier than worrying",
-    "issued": false
+    "issued": false,
+    "completed": true
   },
   {
     "id": 51,
@@ -492,7 +518,7 @@
     "romaji": "Nido aru koto wa sando aru",
     "english": "What happens twice will happen a third time",
     "meaning": "Patterns tend to repeat",
-    "issued": false
+    "issued": true
   },
   {
     "id": 52,
@@ -500,7 +526,7 @@
     "romaji": "En wa inamono aji na mono",
     "english": "Fate is strange yet delightful",
     "meaning": "Chance connections can be surprisingly good",
-    "issued": false
+    "issued": true
   },
   {
     "id": 53,
@@ -508,7 +534,7 @@
     "romaji": "Hara hachibunme",
     "english": "Stomach 80 percent full",
     "meaning": "Eat in moderation",
-    "issued": false
+    "issued": true
   },
   {
     "id": 54,
@@ -516,7 +542,7 @@
     "romaji": "Tonari no hana wa akai",
     "english": "The neighbor's flowers are red",
     "meaning": "The grass is always greener on the other side",
-    "issued": false
+    "issued": true
   },
   {
     "id": 55,
@@ -524,7 +550,8 @@
     "romaji": "Inu mo arukeba bou ni ataru",
     "english": "Even a walking dog will hit a stick",
     "meaning": "Acting can lead to luck (or trouble)",
-    "issued": false
+    "issued": false,
+    "completed": true
   },
   {
     "id": 56,
@@ -532,7 +559,7 @@
     "romaji": "Tana kara botamochi",
     "english": "A rice cake falls from the shelf",
     "meaning": "A windfall; unexpected good luck",
-    "issued": false
+    "issued": true
   },
   {
     "id": 57,
@@ -540,7 +567,7 @@
     "romaji": "Neko no te mo karitai",
     "english": "I'd even borrow a cat's paw",
     "meaning": "Extremely busy",
-    "issued": false
+    "issued": true
   },
   {
     "id": 58,
@@ -548,7 +575,7 @@
     "romaji": "Seite wa koto wo shisonjiru",
     "english": "Haste will spoil things",
     "meaning": "Haste makes waste",
-    "issued": false
+    "issued": true
   },
   {
     "id": 59,
@@ -556,7 +583,7 @@
     "romaji": "Atama kakushite shiri kakusazu",
     "english": "Hide your head, but not your butt",
     "meaning": "Trying to hide something obvious",
-    "issued": false
+    "issued": true
   },
   {
     "id": 60,

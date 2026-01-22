@@ -22,35 +22,65 @@ fi
 
 # Patterns to ignore (won't trigger a build)
 IGNORE_PATTERNS=(
-  "\.[mM][dD]([xX])?$"
+  # Documentation
+  "\\.[mM][dD]([xX])?$"
   "^LICENSE\\.md$"
   "^SECURITY\\.md$"
   "^CONTRIBUTING\\.md$"
   "^CODE_OF_CONDUCT\\.md$"
+  "^CHANGELOG\\.md$"
+  "^AGENTS\\.md$"
+  "^CLAUDE\\.md$"
+  "^llms\\.txt$"
   "^docs/"
+  
+  # Scripts and tooling
   "^scripts/"
-  "^\.agent/"
-  "^\.claude/"
-  "^\.kiro/"
-  "^\.vscode/"
-  "^\.idea/"
-  "^\.github/"
-  "^\.husky/"
-  "^\.editorconfig$"
-  "^\.gitattributes$"
-  "^\.gitignore$"
-  "^\.npmrc$"
-  "^\.prettierrc$"
-  "^\.prettierignore$"
-  "^\.claudeignore$"
-  "^eslint\.config\.mjs$"
-  "^vitest\.config\.ts$"
+  "^\\.storybook/"
+  
+  # IDE and editor configs
+  "^\\.agent/"
+  "^\\.claude/"
+  "^\\.kiro/"
+  "^\\.vscode/"
+  "^\\.idea/"
+  "^\\.editorconfig$"
+  
+  # Git and GitHub
+  "^\\.github/"
+  "^\\.husky/"
+  "^\\.gitattributes$"
+  "^\\.gitignore$"
+  
+  # Linting and formatting configs
+  "^\\.npmrc$"
+  "^\\.prettierrc$"
+  "^\\.prettierignore$"
+  "^\\.claudeignore$"
+  "^eslint\\.config\\.mjs$"
+  "^lint-staged\\.config\\.js$"
+  
+  # Test files and configs
+  "^vitest\\.config\\.ts$"
+  "\\.test\\.(ts|tsx)$"
+  "\\.spec\\.(ts|tsx)$"
+  "/__tests__/"
+  
+  # Docker files
+  "^Dockerfile$"
+  "^Dockerfile\\..+$"
+  "^docker-compose\\.yml$"
+  "^\\.dockerignore$"
+  
+  # Environment examples
+  "^\\.env\\.example$"
+  "^\\.env\\.sample$"
+  
+  # Data and community content (non-build affecting)
   "^features/Preferences/data/themes\\.ts$"
   "^public/japan-facts\\.json$"
   "^data/community/"
   "^data/.*\\.json$"
-  "\.test\.(ts|tsx)$"
-  "\.spec\.(ts|tsx)$"
 )
 
 # Build the combined regex pattern

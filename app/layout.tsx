@@ -20,6 +20,10 @@ export const viewport: Viewport = {
   initialScale: 1.0,
   maximumScale: 5.0,
   userScalable: true,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+  ],
 };
 
 export const metadata: Metadata = {
@@ -31,7 +35,7 @@ export const metadata: Metadata = {
     template: '%s | KanaDojo',
   },
   description:
-    'Master Japanese with KanaDojo - a fun, aesthetic, minimalist platform for learning Hiragana, Katakana, Kanji, and Vocabulary. Practice with interactive games, track progress, and customize your learning experience.',
+    'Master Japanese with KanaDojo - a fun, aesthetic platform for learning Hiragana, Katakana, Kanji, and Vocabulary. Practice with interactive games, track progress, and customize your learning experience.',
   icons: {
     icon: [
       { url: '/favicon.ico?v=2' },
@@ -43,7 +47,11 @@ export const metadata: Metadata = {
   },
   verification: {
     google: googleVerificationToken,
-    other: { 'msvalidate.01': msVerificationToken },
+    other: {
+      'msvalidate.01': msVerificationToken,
+      'msapplication-TileColor': '#667eea',
+      'msapplication-config': '/browserconfig.xml',
+    },
   },
   keywords: [
     'learn japanese',
@@ -100,6 +108,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,

@@ -240,7 +240,15 @@ const baseThemeSets: BaseThemeGroup[] = [
         id: 'lucky-cat',
         backgroundColor: 'oklch(92.0% 0.025 90.0 / 1)',
         mainColor: 'oklch(65.0% 0.195 40.0 / 1)',
-        secondaryColor: 'oklch(75.0% 0.145 85.0 / 1)'},{
+        secondaryColor: 'oklch(75.0% 0.145 85.0 / 1)',
+      },
+      {
+        id: 'vending-glow',
+        backgroundColor: 'oklch(16.0% 0.025 280.0 / 1)',
+        mainColor: 'oklch(85.0% 0.125 220.0 / 1)',
+        secondaryColor: 'oklch(78.0% 0.165 45.0 / 1)',
+      },
+      {
         id: 'soda-float',
         backgroundColor: 'oklch(93.0% 0.032 150.0 / 1)',
         mainColor: 'oklch(62.0% 0.175 155.0 / 1)',
@@ -274,19 +282,67 @@ const baseThemeSets: BaseThemeGroup[] = [
         id: 'natto-brown',
         backgroundColor: 'oklch(22.0% 0.032 60.0 / 1)',
         mainColor: 'oklch(58.0% 0.095 65.0 / 1)',
-        secondaryColor: 'oklch(70.0% 0.075 55.0 / 1)'
+        secondaryColor: 'oklch(70.0% 0.075 55.0 / 1)',
       },
       {
-        id: 'sushi-counter',
-        backgroundColor: 'oklch(23.0% 0.028 70.0 / 1)',
-        mainColor: 'oklch(70.0% 0.145 20.0 / 1)',
-        secondaryColor: 'oklch(68.0% 0.095 75.0 / 1)',
+        id: 'ginkgo-gold',
+        backgroundColor: 'oklch(23.0% 0.045 85.0 / 1)',
+        mainColor: 'oklch(88.0% 0.170 95.0 / 1)',
+        secondaryColor: 'oklch(72.0% 0.135 75.0 / 1)',
+      },
+      {
+        id: 'shaved-ice',
+        backgroundColor: 'oklch(95.0% 0.025 215.0 / 1)',
+        mainColor: 'oklch(60.0% 0.195 25.0 / 1)',
+        secondaryColor: 'oklch(65.0% 0.175 215.0 / 1)',
+      },
+      {
+        id: 'cherry-cola',
+        backgroundColor: 'oklch(18.0% 0.055 20.0 / 1)',
+        mainColor: 'oklch(58.0% 0.195 25.0 / 1)',
+        secondaryColor: 'oklch(70.0% 0.145 50.0 / 1)',
+      },
+      {
+        id: 'garden-bridge',
+        backgroundColor: 'oklch(23.0% 0.045 150.0 / 1)',
+        mainColor: 'oklch(60.0% 0.205 25.0 / 1)',
+        secondaryColor: 'oklch(72.0% 0.145 145.0 / 1)',
+      },
+      {
+        id: 'tsukimi-moon',
+        backgroundColor: 'oklch(18.0% 0.028 255.0 / 1)',
+        mainColor: 'oklch(92.0% 0.020 95.0 / 1)',
+        secondaryColor: 'oklch(65.0% 0.105 270.0 / 1)',
+      },
+      {
+        id: 'jpop-energy',
+        backgroundColor: 'oklch(15.0% 0.055 310.0 / 1)',
+        mainColor: 'oklch(80.0% 0.210 345.0 / 1)',
+        secondaryColor: 'oklch(85.0% 0.175 180.0 / 1)',
+      },
+      {
+        id: 'thunder-god',
+        backgroundColor: 'oklch(14.0% 0.058 290.0 / 1)',
+        mainColor: 'oklch(88.0% 0.195 95.0 / 1)',
+        secondaryColor: 'oklch(75.0% 0.180 275.0 / 1)',
+      },
+      {
+        id: 'holographic-idol',
+        backgroundColor: 'oklch(14.0% 0.065 300.0 / 1)',
+        mainColor: 'oklch(82.0% 0.185 200.0 / 1)',
+        secondaryColor: 'oklch(78.0% 0.210 330.0 / 1)',
+      },
+      {
+        id: 'yakuza-tattoo',
+        backgroundColor: 'oklch(17.0% 0.045 255.0 / 1)',
+        mainColor: 'oklch(62.0% 0.185 220.0 / 1)',
+        secondaryColor: 'oklch(70.0% 0.175 15.0 / 1)',
       },
       {
         id: 'starry-tanabata',
         backgroundColor: 'oklch(15.0% 0.048 275.0 / 1)',
         mainColor: 'oklch(88.0% 0.125 255.0 / 1)',
-        secondaryColor: 'oklch(78.0% 0.165 330.0 / 1)'
+        secondaryColor: 'oklch(78.0% 0.165 330.0 / 1)',
       },
       {
         id: 'samurai-steel',
@@ -1157,7 +1213,30 @@ const baseThemeSets: BaseThemeGroup[] = [
         mainColor: 'oklch(70.0% 0.175 225.0 / 1)',
         secondaryColor: 'oklch(75.0% 0.145 350.0 / 1)',
       },
-
+      {
+        id: 'kuroyuri',
+        backgroundColor: 'oklch(23.8% 0.041 270.0 / 1)', // velvet graphite
+        mainColor: 'oklch(91.5% 0.212 120.0 / 1)', // pear green
+        secondaryColor: 'oklch(80.0% 0.158 340.0 / 1)', // smoky plum
+      },
+      {
+        id: 'vaporwave-shrine',
+        backgroundColor: 'oklch(17.0% 0.072 305.0 / 1)',
+        mainColor: 'oklch(75.0% 0.175 195.0 / 1)',
+        secondaryColor: 'oklch(80.0% 0.195 330.0 / 1)',
+      },
+      {
+        id: 'wind-god',
+        backgroundColor: 'oklch(19.0% 0.045 175.0 / 1)',
+        mainColor: 'oklch(82.0% 0.155 180.0 / 1)',
+        secondaryColor: 'oklch(72.0% 0.135 165.0 / 1)',
+      },
+      {
+        id: 'biwako-blue',
+        backgroundColor: 'oklch(22.0% 0.042 230.0 / 1)',
+        mainColor: 'oklch(75.0% 0.135 225.0 / 1)',
+        secondaryColor: 'oklch(82.0% 0.100 215.0 / 1)',
+      },
     ],
   },
   {
@@ -1223,6 +1302,12 @@ const baseThemeSets: BaseThemeGroup[] = [
         backgroundColor: 'oklch(17.0% 0.072 305.0 / 1)',
         mainColor: 'oklch(75.0% 0.175 195.0 / 1)',
         secondaryColor: 'oklch(80.0% 0.195 330.0 / 1)',
+      },
+      {
+        id: 'wind-god',
+        backgroundColor: 'oklch(19.0% 0.045 175.0 / 1)',
+        mainColor: 'oklch(82.0% 0.155 180.0 / 1)',
+        secondaryColor: 'oklch(72.0% 0.135 165.0 / 1)',
       },
     ],
   },
