@@ -263,9 +263,52 @@
     "english": "Dumplings over flowers",
     "meaning": "Practical needs are more important than aesthetic pleasures"
   },
-  "japanese": "覆水盆に返らず",
-  "romaji": "Fukusui bon ni kaerazu",
-  "english": "Spilled water will not return to the tray",
-  "meaning": "What is done cannot be undone"
+  {
+    "japanese": "転んでもただでは起きぬ",
+    "romaji": "Koronde mo tada de wa okinu",
+    "english": "Even if you fall, don't get up empty-handed",
+    "meaning": "Learn something from every setback"
+  },
+  {
+    "japanese": "覆水盆に返らず",
+    "romaji": "Fukusui bon ni kaerazu",
+    "english": "Spilled water will not return to the tray",
+    "meaning": "What is done cannot be undone"
+  },
+  {
+    "japanese": "雨垂れ石を穿つ",
+    "romaji": "Amadare ishi wo ugatsu",
+    "english": "Dripping water pierces stone",
+    "meaning": "Persistence can overcome great obstacles"
+  },
+  {
+    "japanese": "三日坊主",
+    "romaji": "Mikka bouzu",
+    "english": "A three-day monk",
+    "meaning": "Someone who quits quickly"
+  },
+  {
+    "japanese": "棚からぼた餅",
+    "romaji": "Tana kara botamochi",
+    "english": "A rice cake falls from the shelf",
+    "meaning": "A windfall; unexpected good luck"
+  },
+  {
+    "japanese": "七転び八起き",
+    "romaji": "Nanakorobi yaoki",
+    "english": "Fall seven times, get up eight",
+    "meaning": "Never give up"
+  },
+  {
+  "japanese": "急いては事を仕損じる",
+  "romaji": "Seite wa koto wo shisonjiru",
+  "english": "Haste will spoil things",
+  "meaning": "Haste makes waste"
 },
+{
+  "japanese": "隣の花は赤い",
+  "romaji": "Tonari no hana wa akai",
+  "english": "The neighbor's flowers are red",
+  "meaning": "The grass is always greener on the other side"
+}
 ]

@@ -72,6 +72,32 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        // Security headers for all routes (enhances Bing trust signals)
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'interest-cohort=()',
+          },
+        ],
+      },
+      {
         // Audio files - immutable, cache forever
         source: '/sounds/:path*',
         headers: [

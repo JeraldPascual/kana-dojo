@@ -27,6 +27,9 @@ jobs:
   create-issue:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    if: github.repository == 'lingdojo/kana-dojo'
+    env:
+      AUTOMATION_PR_TOKEN: ${{ secrets.AUTOMATION_PR_TOKEN }}
 
     steps:
       - name: Checkout repository
@@ -358,7 +361,7 @@ jobs:
 
       - name: Commit backlog updates
         id: commit-backlog
-        if: steps.create-issue.outputs.should_commit == 'true'
+        if: steps.create-issue.outputs.should_commit == 'true' && env.AUTOMATION_PR_TOKEN != ''
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.AUTOMATION_PR_TOKEN }}
@@ -372,7 +375,7 @@ jobs:
           delete-branch: true
 
       - name: Auto-approve and merge automation PR
-        if: steps.create-issue.outputs.should_commit == 'true'
+        if: steps.create-issue.outputs.should_commit == 'true' && env.AUTOMATION_PR_TOKEN != ''
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.AUTOMATION_PR_TOKEN }}

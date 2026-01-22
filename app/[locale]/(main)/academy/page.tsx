@@ -3,6 +3,7 @@ import { getBlogPosts, BlogList } from '@/features/Blog';
 import { routing, type Locale } from '@/core/i18n/routing';
 import { generatePageMetadata } from '@/core/i18n/metadata-helpers';
 import { BreadcrumbSchema } from '@/shared/components/SEO/BreadcrumbSchema';
+import { Breadcrumbs } from '@/shared/components/Breadcrumbs';
 
 export function generateStaticParams() {
   return routing.locales.map(locale => ({ locale }));
@@ -34,6 +35,12 @@ export default async function AcademyPage({ params }: AcademyPageProps) {
         items={[
           { name: 'Home', url: `https://kanadojo.com/${locale}` },
           { name: 'Academy', url: `https://kanadojo.com/${locale}/academy` },
+        ]}
+      />
+      <Breadcrumbs
+        items={[
+          { name: 'Home', url: `/${locale}` },
+          { name: 'Academy', url: `/${locale}/academy` },
         ]}
       />
       <header className='mb-8'>

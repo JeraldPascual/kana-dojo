@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { routing } from '@/core/i18n/routing';
 import { BreadcrumbSchema } from '@/shared/components/SEO/BreadcrumbSchema';
+import { Breadcrumbs } from '@/shared/components/Breadcrumbs';
 
 export function generateStaticParams() {
   return routing.locales.map(locale => ({ locale }));
@@ -61,6 +62,13 @@ export default async function JLPTN5Page({
         ]}
       />
       <div className='mx-auto max-w-4xl px-4 py-8'>
+        <Breadcrumbs
+          items={[
+            { name: 'Home', url: `/${locale}` },
+            { name: 'JLPT', url: `/${locale}/jlpt/n5` },
+            { name: 'N5', url: `/${locale}/jlpt/n5` },
+          ]}
+        />
         <h1 className='mb-4 text-center text-4xl font-bold text-[var(--main-color)]'>
           JLPT N5 Study Guide
         </h1>

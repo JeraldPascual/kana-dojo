@@ -353,7 +353,10 @@
   {
     "id": 49,
     "fact": "The word 'amae' (甘え) describes depending on another's goodwill - a uniquely Japanese concept of presuming on someone's affection.",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "sheryyll",
+    "completedPR": 1425
   },
   {
     "id": 50,
@@ -540,7 +543,10 @@
   {
     "id": 75,
     "fact": "The word 'enryo' (遠慮) describes polite restraint - like declining seconds even when hungry, to not be a burden.",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "kaedeek",
+    "completedPR": 1371
   },
   {
     "id": 76,
@@ -558,7 +564,10 @@
   {
     "id": 78,
     "fact": "Japan has the world's shortest escalator - only 5 steps tall (83.4 cm) at More's Department Store in Kawasaki.",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "JeraldPascual",
+    "completedPR": 1370
   },
   {
     "id": 79,
@@ -603,7 +612,8 @@
   {
     "id": 84,
     "fact": "Japan has 'crying rooms' in some theaters where parents can watch movies with babies without disturbing other viewers.",
-    "issued": true
+    "issued": false,
+    "completed": true
   },
   {
     "id": 85,
@@ -666,7 +676,10 @@
   {
     "id": 93,
     "fact": "The Japanese word 'tekito' (適当) means both 'appropriate' and 'whatever/random' depending on context and tone.",
-    "issued": true
+    "issued": true,
+    "completed": true,
+    "completedBy": "kaedeek",
+    "completedPR": 1368
   },
   {
     "id": 94,
@@ -679,57 +692,57 @@
   {
     "id": 95,
     "fact": "There's a Japanese practice called 'goraiko' (御来光) - watching the sunrise from a mountain peak, especially on New Year's Day.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 96,
     "fact": "Japan has some of the world's oldest trees - a Japanese cedar called Jōmon Sugi on Yakushima is estimated to be 2,000-7,000 years old.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 97,
     "fact": "The word 'majime' (真面目) describes someone earnest and sincere - a highly valued personality trait in Japanese culture.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 98,
     "fact": "Japan has a festival where parents throw their babies to sumo wrestlers, who bounce them for good luck and health.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 99,
     "fact": "There's a Japanese word 'takumi' (匠) for master craftsmen who dedicate their lives to perfecting a single skill.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 100,
     "fact": "Japan's Shinkansen (bullet train) has a cleaning crew that fully cleans each car in exactly 7 minutes between arrivals and departures.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 101,
     "fact": "The Japanese concept 'meibutsu' (名物) refers to famous local products - every region has foods and crafts found nowhere else.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 102,
     "fact": "Japan has professional apology agencies where you can hire someone to apologize on your behalf for serious personal matters.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 103,
     "fact": "There's a Japanese word 'kenkyo' (謙虚) for humility so deep it rejects praise - considered one of the highest virtues.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 104,
     "fact": "Japan has train 'pushers' (oshiya) whose job is to physically push passengers into overcrowded trains during rush hour.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 105,
     "fact": "The word 'mendokusai' (面倒くさい) describes something too troublesome to deal with - a very commonly used expression.",
-    "issued": false
+    "issued": true
   },
   {
     "id": 106,
