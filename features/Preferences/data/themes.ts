@@ -261,6 +261,7 @@ const baseThemeSets: BaseThemeGroup[] = [
         secondaryColor: 'oklch(75.0% 0.180 275.0 / 1)'
       },
       {
+<<<<<<< HEAD
         id: 'autumn-temple',
         backgroundColor: 'oklch(20.0% 0.048 35.0 / 1)',
         mainColor: 'oklch(68.0% 0.185 40.0 / 1)',
@@ -306,7 +307,14 @@ const baseThemeSets: BaseThemeGroup[] = [
         id: 'shaved-ice',
         backgroundColor: 'oklch(95.0% 0.025 215.0 / 1)',
         mainColor: 'oklch(60.0% 0.195 25.0 / 1)',
-        secondaryColor: 'oklch(65.0% 0.175 215.0 / 1)',
+        secondaryColor: 'oklch(65.0% 0.175 215.0 / 1)'
+      },
+      {
+        id: 'pagoda-twilight',
+        backgroundColor: 'oklch(20.0% 0.045 290.0 / 1)',
+        mainColor: 'oklch(68.0% 0.155 315.0 / 1)',
+        secondaryColor: 'oklch(75.0% 0.125 280.0 / 1)'
+      },
       },
       {
         id: 'lucky-bamboo',
